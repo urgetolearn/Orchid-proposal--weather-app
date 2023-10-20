@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <h1 id="city">🔍Bengaluru, Karnataka</h1>
+        
+        <div class="row">
+          <span>
+           <span class="big">12 
+            <sup class="sm">°C</sup></span>
+          </span>
+          
+          
+          <div class="col-6">
+            <ul>
+                <li class="nor">
+                    Clear and few clouds
+                </li>
+              
+              <li class="small">Wind = 2 km/h</li>
+            </ul>
+            
+            
+            <div class="wob_df wob_ds" data-wob-di="0" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soAHoECAgQCg" fdprocessedid="mt0dxe"><div class="Z1VzSb" aria-label="Thursday">Thu</div>
+            <div class="DxhUm"><g-img class="uW5pk"><img id="dimg_1" src="https://openweathermap.org/img/wn/01d@2x.png" class="YQ4gaf zr758c" alt="Partly Cloudy" data-atf="1" data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e"><span class="wob_t" style="display:inline">31</span>
+                    <span class="wob_t" style="display:none">87</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">18</span><span class="wob_t" style="display:none">65</span>°C</div></div></div>
+
+                    <div class="wob_df" data-wob-di="1" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soAXoECAgQCw" fdprocessedid="8vc9ka"><div class="Z1VzSb" aria-label="Friday">Fri</div><div class="DxhUm"><g-img class="uW5pk"><img id="dimg_3" src="https://openweathermap.org/img/wn/10d@2x.png" class="YQ4gaf zr758c" alt="Mostly Sunny" data-atf="1" data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e"><span class="wob_t" style="display:inline">29</span><span class="wob_t" style="display:none">85</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">19</span><span class="wob_t" style="display:none">66</span>°C</div></div></div>
+
+                        <div class="wob_df" data-wob-di="2" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soAnoECAgQDA" fdprocessedid="omncni"><div class="Z1VzSb" aria-label="Saturday">Sat</div><div class="DxhUm"><g-img class="uW5pk"><img id="dimg_5" src="https://openweathermap.org/img/wn/10d@2x.png" class="YQ4gaf zr758c" alt="Partly Cloudy" data-atf="1" data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e"><span class="wob_t" style="display:inline">29</span><span class="wob_t" style="display:none">85</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">19</span><span class="wob_t" style="display:none">67</span>°C</div></div></div>
+
+                            <div class="wob_df" data-wob-di="3" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soA3oECAgQDQ" fdprocessedid="t7nfp"><div class="Z1VzSb" aria-label="Sunday">Sun</div><div class="DxhUm"><g-img class="uW5pk"><img id="dimg_7" src="https://openweathermap.org/img/wn/10d@2x.png" class="YQ4gaf zr758c" alt="Partly Cloudy" data-atf="1" data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e">
+                                <span class="wob_t" style="display:inline">29</span><span class="wob_t" style="display:none">85</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">19</span><span class="wob_t" style="display:none">67</span>°C</div></div></div>
+
+                                <div class="wob_df" data-wob-di="4" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soBHoECAgQDg" fdprocessedid="u89rk"><div class="Z1VzSb" aria-label="Monday">Mon</div><div class="DxhUm"><g-img class="uW5pk"><img id="dimg_9" src="https://openweathermap.org/img/wn/10d@2x.png" class="YQ4gaf zr758c" alt="Partly Cloudy" data-atf="1" data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e"><span class="wob_t" style="display:inline">31</span><span class="wob_t" style="display:none">87</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">18</span><span class="wob_t" style="display:none">65</span>°C</div></div></div>
+
+                                    <div class="wob_df" data-wob-di="5" role="button" tabindex="0" data-ved="2ahUKEwjg2PT2n4CCAxXUqVYBHTbXBvYQi2soBXoECAgQDw" fdprocessedid="qa0ut"><div class="Z1VzSb" aria-label="Tuesday">Tue</div><div class="DxhUm"><g-img class="uW5pk"><img id="dimg_11" src="https://openweathermap.org/img/wn/10d@2x.png" class="YQ4gaf zr758c" alt="Partly Cloudy" data-atf="1" 
+                                        data-frt="0"></g-img></div><div class="wNE31c"><div class="gNCp2e"><span class="wob_t" style="display:inline">30</span><span class="wob_t" style="display:none">86</span>°C</div><div class="QrNVmd ZXCv8e"><span class="wob_t" style="display:inline">18</span><span class="wob_t" style="display:none">65</span>°C</div></div></div>
+
+                                        <div class="day">Thursday  <span class="norm">02</span><sup>00</sup><span class="norm"> 05</span><sup>00</sup><span class="norm"> 08</span><sup>00</sup><span class="norm"> 11</span><sup>00</sup>
+                                        <span class="norm">14</span><sup>00</sup><span class="norm">17</span><sup>00</sup><span class="norm"> 20</span><sup>00</sup><span class="norm"> 23</span><sup>00</sup>
+                                        </div> 
+
+
+
+
+
+                                        <div class="temp">🌡Temperature(°C)<text aria-label="24°°Celsius Thursday, 12:00 am" class="temp0">24°</text>
+                                        <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                                    <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                                    <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                                <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                            <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                        <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text>
+                    <text aria-label="24°°Celsius Thursday, 12:00 am" class="temp1">24°</text></div>
+                    
+                    
+                    <div class="wind">𓊹  Wind (km/h)
+                        <span class="windele">
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="8 km/h From southeast" id="wind_image_0" style="transform-origin:50% 50%;transform:rotate(204deg);width:16px" aria-hidden="true" data-ilt="1697654525380">8
+                        <span class="windele">
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="6 km/h From east" id="wind_image_3" style="transform-origin:50% 50%;transform:rotate(202deg);width:16px" aria-hidden="true" data-ilt="1697654525380">6
+                        </span>
+                        <span class="windele"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="5 km/h From east" id="wind_image_6" style="transform-origin:50% 50%;transform:rotate(180deg);width:16px" aria-hidden="true" data-ilt="1697654525379">5
+                        
+                        <span class="windele"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="8 km/h From east" id="wind_image_9" style="transform-origin:50% 50%;transform:rotate(166deg);width:16px" aria-hidden="true" data-ilt="1697654525379">8
+                        
+                        <span class="windele1"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="14 km/h From northeast" id="wind_image_12" style="transform-origin:50% 50%;transform:rotate(147deg);width:24px" aria-hidden="true" data-ilt="1697654525380">14
+                        
+                        <span class="windele1"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="13 km/h From northeast" id="wind_image_15" style="transform-origin:50% 50%;transform:rotate(155deg);width:24px" aria-hidden="true" data-ilt="1697654525380">13
+                        
+                        <span class="windele1"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="13 km/h From east" id="wind_image_18" style="transform-origin:50% 50%;transform:rotate(181deg);width:24px" aria-hidden="true" data-ilt="1697654525380">13
+                        
+                        <span class="windele1"></span>
+                        <img src="https://ssl.gstatic.com/m/images/weather/wind_unselected.svg" alt="13 km/h From east" id="wind_image_21" style="transform-origin:50% 50%;transform:rotate(193deg);width:24px" aria-hidden="true" data-ilt="1697654525379">13
+
+                        
+                        </span>
+                    </div>
+                    <div class="prec">
+                        💧Precipitation
+                        <span class="precele">
+                            <span class="XwOqJe" aria-label="0% Thursday, 4:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">12%</span>
+                            <span class="XwOqJe1" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe1" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe1" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>
+                            <span class="XwOqJe1" aria-label="0% Thursday, 1:00 pm" style="color:#1a73e8">0%</span>    
+                        </span>
+                    </div>
+                    <hr>
+                    <button>More</button>
+                                        
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

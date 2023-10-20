@@ -1,0 +1,116 @@
+body {
+  font-family: arial, sans-serif;
+}
+.weather-app {
+  max-width: 700px;
+  margin: 35px auto;
+  padding: 20px;
+  border: 1px black;
+  border-radius: 5px;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  box-shadow: 5px black;
+}
+
+h1 {
+  color: black;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-left: 170px;
+  padding:20px;
+  margin-top: -45px;
+}
+button {
+  margin-left: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+li {
+  list-style: none;
+  margin: 2px;
+  color: black;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+.big {
+  font-size: 70px;
+}
+.sm {
+  color: #202124;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 6px;
+
+  vertical-align: top;
+}
+.nor {
+  font-size: 23px;
+}
+.small {
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.wob_df {
+  -webkit-transition-duration: 200ms, 200ms, 200ms;
+  -webkit-transition-property: background-image, border, font-weight;
+  display: inline-block;
+  height: 95px;
+  line-height: 1;
+  margin-right: 7px;
+  text-align: center;
+  width: 100px;
+}
+.day {
+  padding-top: 30px;
+  padding-left: 28px;
+}
+.norm {
+  padding-left: 35px;
+}
+.temp {
+  padding-top: 25px;
+  margin-left: -23px;
+}
+.temp0 {
+  padding-left: 28px;
+}
+.temp1 {
+  padding-left: 41px;
+}
+.wind {
+  padding-top: 20px;
+}
+.windele {
+  padding-left: 35px;
+}
+.windele1 {
+  padding-left: 28px;
+}
+.prec {
+  padding-top: 20px;
+  margin-left: -15px;
+}
+.precele {
+  padding-left: 8px;
+}
+.XwOqJe {
+  padding-left: 33px;
+}
+.XwOqJe1 {
+  padding-left: 44px;
+}
